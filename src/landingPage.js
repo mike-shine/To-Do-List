@@ -4,14 +4,14 @@ const landingPage = () => {
 
   document.body.appendChild(test);
 
-  const toDo = (title, description, dueDate, priority) => {
-    this.title = title;
-    this.description = description;
-    this.dueDate = dueDate;
-    this.priority = priority;
-  }
+  // const toDo = (title, description, dueDate, priority) => {
+  //   this.title = title;
+  //   this.description = description;
+  //   this.dueDate = dueDate;
+  //   this.priority = priority;
+  // }
 
-  const doTheDishes = new toDo('Do the dishes', 'self-explanatory', 'Next thursday', 'medium');
+  // const doTheDishes = new toDo('Do the dishes', 'self-explanatory', 'Next thursday', 'medium');
 
 }
 
