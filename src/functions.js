@@ -11,6 +11,7 @@
   const addToDOM = (title, dueDate) => {
     const toDoContainer = document.createElement('div');
     toDoContainer.classList.add('toDoContainer');
+    toDoContainer.style.border = '2px solid steelblue';
     document.body.appendChild(toDoContainer);
 
     const newToDo = document.createElement('div');
