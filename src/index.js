@@ -1,5 +1,5 @@
 import {newProjectButton, newToDoButton} from './landingPage.js';
-import functions from './functions.js';
+import {makeToDo, addToDOM, newToDoInfo} from './functions.js';
 
 
 window.addEventListener('DOMContentLoaded', (e) => {
@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 const toDoModal = document.getElementById('toDoModal');
 const projectModal = document.getElementById('projectModal');
 const closeButton = document.getElementsByClassName('closeButton')[0];
+const submitToDo = document.getElementById('submitToDo');
 
 newToDoButton.addEventListener('click', () => {
   toDoModal.style.display = 'block';
@@ -31,10 +32,10 @@ window.addEventListener('click', (e) => {
   }
 })
 
-function newToDoInfo() {
-  const projectStatus = document.querySelector('#project').value;
-
-}
+submitToDo.addEventListener('click', () => {
+  toDoModal.style.display = 'none';
+  addToDOM(newToDoInfo());
+});
 
 
 

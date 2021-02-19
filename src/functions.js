@@ -48,4 +48,28 @@
   };
 
 
-export {makeToDo, addToDOM};
+
+
+/* Adding a new to do using info from the modal  */
+
+  function newToDoInfo() {
+    const projectStatus = document.querySelector('#project').value;
+    const title = document.querySelector('#newToDoTitle').value;
+    const description = document.querySelector('#newToDoDescription').value;
+    const dueDate = document.querySelector('#newToDoDueDate').value;
+    const low = document.querySelector('#low').checked;
+    const medium = document.querySelector('#medium').checked;
+    const high = document.querySelector('#high').checked;
+    let priority;
+    if (low) {
+      priority = 'low';
+    } else if (medium) {
+      priority = 'medium';
+    } else if (high) {
+      priority = 'high';
+    }
+    return makeToDo(projectStatus, title, description, dueDate, priority);
+  }
+
+
+export {makeToDo, addToDOM, newToDoInfo};
