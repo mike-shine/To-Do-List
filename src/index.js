@@ -1,10 +1,10 @@
-import landingPage from './landingPage.js';
+import {newProjectButton, newToDoButton} from './landingPage.js';
 import functions from './functions.js';
 
 
 window.addEventListener('DOMContentLoaded', (e) => {
   e.preventDefault();
-  landingPage();
+  // landingPage();
 });
 
 const toDoModal = document.getElementById('toDoModal');

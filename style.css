@@ -1,11 +1,50 @@
+/* General  */
+
 * {
   font-family: 'Benne';
   background-color: mintcream;
 }
 
+/* Modal  */
+
 #toDoModal {
   display: none;
 }
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 400px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-header, .modal-content, form, label {
+  background-color: ivory;
+}
+
+.modal-content {
+  margin: auto;
+  padding: 10px;
+  border: 1px solid papayawhip;
+  width: 80%;
+}
+
+.close {
+  color: dimgray;
+  float: right;
+  font-size: 18px;
+}
+
+.close:hover, .close:focus {
+  color:firebrick;
+  cursor: pointer;
+}
+
+/* buttons, to-do general characteristics  */
 
 .completed {
   background-color: limegreen;
