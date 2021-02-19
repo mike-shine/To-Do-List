@@ -24,9 +24,12 @@ const washDishes = makeToDo('Around the House', 'wash the dirty dishes', 'pretty
 
 const paintTheFence = makeToDo('Around the House', 'finish painting the backyard fence', 'I think that lovely shade of purple will be just right', 'tomorrow at the latest!', 'high');
 
+const climbEverest = makeToDo('', 'climb Mt. Everest', 'descriptions for to-dos are kind of stupid', 'the end of 2022', 'medium');
+
 addToDOM(mowLawn.project, mowLawn.title, mowLawn.dueDate);
 addToDOM(washDishes.project, washDishes.title, washDishes.dueDate);
 addToDOM(paintTheFence.project, paintTheFence.title, paintTheFence.dueDate);
+addToDOM(climbEverest.project, climbEverest.title, climbEverest.dueDate);
 
 
 
