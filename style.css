@@ -9,9 +9,12 @@ button, input {
   min-height: 25px;
 }
 
+
+
+
 /* Modal  */
 
-#toDoModal {
+#toDoModal, #projectModal {
   display: none;
 }
 

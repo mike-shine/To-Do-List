@@ -21,13 +21,13 @@ newProjectButton.addEventListener('click', () => {
 
 closeButton.addEventListener('click', () => {
   toDoModal.style.display = 'none';
-  // projectModal.style.display = 'none';
+  projectModal.style.display = 'none';
 });
 
 window.addEventListener('click', (e) => {
   if (e.target === toDoModal || e.target === projectModal) {
     toDoModal.style.display = 'none';
-    // projectModal.style.display = 'none';
+    projectModal.style.display = 'none';
   }
 })
 

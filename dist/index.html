@@ -15,7 +15,7 @@
           <input type="text" id="newToDoTitle" name="newToDoTitle"><br><br>
           <label for="description">Description: </label>
           <input type="text" id="newToDoDescription" name="newToDoDescription"><br><br>
-          <label for="dueDate">When should this be completed? </label>
+          <label for="dueDate">When should this task be completed? </label>
           <input type="text" id="newToDoDueDate" name="newToDoDueDate"><br><br>
           <input type="radio" id="low" name="newToDoPriority" value="low">
           <label for="newToDoPriority">Low</label>
@@ -24,6 +24,23 @@
           <input type="radio" id="high" name="newToDoPriority" value="high">
           <label for="newToDoPriority">High</label><br><br>
           <input type="submit" value="Add this to-do">
+          <input type="reset">
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <span class="closeButton">&times;</span>
+        <form class="projectForm">
+          <h2 class="modal-header">New Project</h2>
+          <label for="title">Title: </label>
+          <input type="text" id="newProjectTitle" name="newProjectTitle"><br><br>
+          <label for="description">Description: </label>
+          <input type="text" id="newProjectDescription" name="newProjectDescription"><br><br>
+          <label for="dueDate">When are you aiming to have this project done? </label>
+          <input type="text" id="newProjectDueDate" name="newProjectDueDate"><br><br>
+          <input type="submit" value="Add this project">
+          <input type="reset">
         </form>
       </div>
     </div>
