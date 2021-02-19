@@ -11,6 +11,12 @@
         <span class="closeButton">&times;</span>
         <form class="toDoForm">
           <h2 class="modal-header">New To-Do</h2>
+          <label for="project">Is this to-do for a particular project? If not, leave this field blank and this will be an 'unsorted' to-do.</label>
+          <select name="project" id="project">
+            <option value="unsorted"></option>
+            <option value="aroundTheHouse">Around the House</option>
+            <option value="shed">Backyard Shed</option>
+          </select><br><br>
           <label for="title">Title: </label>
           <input type="text" id="newToDoTitle" name="newToDoTitle"><br><br>
           <label for="description">Description: </label>
