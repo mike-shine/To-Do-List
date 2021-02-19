@@ -31,5 +31,10 @@ window.addEventListener('click', (e) => {
   }
 })
 
+function newToDoInfo() {
+  const projectStatus = document.querySelector('#project').value;
+
+}
+
 
 

@@ -18,15 +18,15 @@ newToDoButton.classList.add('newToDoButton');
 newToDoButton.textContent = 'New to-do';
 document.body.appendChild(newToDoButton);
 
-const mowLawn = makeToDo('mow the lawn', 'cut the blades of grass shorter', 'next thursday', 'low');
+const mowLawn = makeToDo('Around the House', 'mow the lawn', 'cut the blades of grass shorter', 'next thursday', 'low');
 
-const washDishes = makeToDo('wash the dirty dishes', 'pretty self-explanatory', 'saturday', 'medium');
+const washDishes = makeToDo('Around the House', 'wash the dirty dishes', 'pretty self-explanatory', 'saturday', 'medium');
 
-const paintTheFence = makeToDo('finish painting the backyard fence', 'I think that lovely shade of purple will be just right', 'tomorrow at the latest!', 'high');
+const paintTheFence = makeToDo('Around the House', 'finish painting the backyard fence', 'I think that lovely shade of purple will be just right', 'tomorrow at the latest!', 'high');
 
-addToDOM(mowLawn.title, mowLawn.dueDate);
-addToDOM(washDishes.title, washDishes.dueDate);
-addToDOM(paintTheFence.title, paintTheFence.dueDate);
+addToDOM(mowLawn.project, mowLawn.title, mowLawn.dueDate);
+addToDOM(washDishes.project, washDishes.title, washDishes.dueDate);
+addToDOM(paintTheFence.project, paintTheFence.title, paintTheFence.dueDate);
 
 
 

@@ -1,22 +1,32 @@
   /* Factory function for constructing to-dos   */
 
-  const makeToDo = (title, description, dueDate, priority) => {
-    return {title, description, dueDate, priority};
+  const makeToDo = (project, title, description, dueDate, priority) => {
+    return {project, title, description, dueDate, priority};
   };
 
 
 
   /* Function for adding new to-dos to the DOM  */
 
-  const addToDOM = (title, dueDate) => {
+  const addToDOM = (project, title, dueDate) => {
     const toDoContainer = document.createElement('div');
     toDoContainer.classList.add('toDoContainer');
-    // toDoContainer.style.border = '2px solid steelblue';
     document.body.appendChild(toDoContainer);
 
     const newToDo = document.createElement('div');
     newToDo.classList.add('toDo');
     toDoContainer.appendChild(newToDo);
+
+    const toDoProjectContainer = document.createElement('div');
+    toDoProjectContainer.classList.add('toDoProjectContainer');
+    newToDo.appendChild(toDoProjectContainer);
+
+    const toDoProject = document.createElement('h5');
+    toDoProject.classList.add('toDoProject');
+    Boolean(project)
+    ? toDoProject.textContent = project
+    : toDoProject.textContent = 'Unsorted';
+    toDoProjectContainer.appendChild(toDoProject);
 
     const toDoTitleContainer = document.createElement('div');
     toDoTitleContainer.classList.add('toDoTitleContainer');
