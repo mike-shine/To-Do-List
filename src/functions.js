@@ -11,7 +11,7 @@
   const addToDOM = (title, dueDate) => {
     const toDoContainer = document.createElement('div');
     toDoContainer.classList.add('toDoContainer');
-    toDoContainer.style.border = '2px solid steelblue';
+    // toDoContainer.style.border = '2px solid steelblue';
     document.body.appendChild(toDoContainer);
 
     const newToDo = document.createElement('div');
@@ -24,7 +24,7 @@
 
     const toDoTitle = document.createElement('h3');
     toDoTitle.classList.add('toDoTitle');
-    toDoTitle.textContent = title;
+    toDoTitle.textContent = `You have to: ${title}.`;
     toDoTitleContainer.appendChild(toDoTitle);
 
     const toDoDueDateContainer = document.createElement('div');
@@ -33,7 +33,7 @@
 
     const toDoDueDate = document.createElement('h4');
     toDoDueDate.classList.add('toDoDueDate');
-    toDoDueDate.textContent = dueDate;
+    toDoDueDate.textContent = `Get this done by: ${dueDate}.`;
     newToDo.appendChild(toDoDueDate);
   };
 

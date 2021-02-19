@@ -2,3 +2,25 @@
   font-family: 'Benne';
   background-color: mintcream;
 }
+
+.completed {
+  background-color: limegreen;
+  opacity: 0.5;
+}
+
+.newProjectButton, .newToDoButton {
+  background-color: palegreen;
+  margin-bottom: 10px;
+}
+
+/* .toDoContainer:hover, .toDo:hover, .toDoTitleContainer:hover {
+  background-color: gold;
+} */
+
+.toDoTitle:hover, .toDoDueDate:hover {
+  color: olivedrab;
+}
+
+.toDoContainer {
+  border: 2px solid steelblue;
+}
