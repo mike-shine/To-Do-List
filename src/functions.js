@@ -33,7 +33,7 @@
 
     const toDoDueDate = document.createElement('h4');
     toDoDueDate.classList.add('toDoDueDate');
-    toDoDueDate.textContent = `Get this done by: ${dueDate}.`;
+    toDoDueDate.textContent = `Get this done by: ${dueDate}`;
     newToDo.appendChild(toDoDueDate);
   };
 

@@ -6,6 +6,32 @@
     <title>To-Do List</title>
   </head>
   <body>
+
+    <div class="modal" id="toDoModal">
+      <div class="modal-content">
+        <span class="closeButton">&times;</span>
+        <form class="toDoForm">
+          <h2>New To-Do</h2>
+          <label for="title">Title: </label><br>
+          <input type="text" id="newToDoTitle" name="newToDoTitle">
+          <label for="description">Description: </label><br>
+          <input type="text" id="newToDoDescription" name="newToDoDescription">
+          <label for="dueDate">When should this be completed? </label><br>
+          <input type="text" id="newToDoDueDate" name="newToDoDueDate">
+          <input type="radio" id="low" name="newToDoPriority" value="low">
+          <label for="newToDoPriority">Low</label>
+          <input type="radio" id="medium" name="newToDoPriority" value="medium">
+          <label for="newToDoPriority">Medium</label>
+          <input type="radio" id="high" name="newToDoPriority" value="high">
+          <label for="newToDoPriority">High</label>
+        </form>
+      </div>
+    </div>
     <script src="bundle.js"></script>
+    <!-- <form class=>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" value="John"><br><br>
+      <input type="submit" value="Submit">
+    </form> -->
   </body>
 </html>

@@ -3,6 +3,10 @@
   background-color: mintcream;
 }
 
+#toDoModal {
+  display: none;
+}
+
 .completed {
   background-color: limegreen;
   opacity: 0.5;
@@ -12,10 +16,6 @@
   background-color: palegreen;
   margin-bottom: 10px;
 }
-
-/* .toDoContainer:hover, .toDo:hover, .toDoTitleContainer:hover {
-  background-color: gold;
-} */
 
 .toDoTitle:hover, .toDoDueDate:hover {
   color: olivedrab;
