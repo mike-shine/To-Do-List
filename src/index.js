@@ -38,6 +38,7 @@ window.addEventListener('click', (e) => {
 })
 
 submitToDo.addEventListener('click', () => {
+  event.preventDefault();
   toDoModal.style.display = 'none';
   let newAddition = newToDoInfo();
   addToDOM(newAddition.project, newAddition.title, newAddition.dueDate);
