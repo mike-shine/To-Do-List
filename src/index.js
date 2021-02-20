@@ -39,7 +39,7 @@ window.addEventListener('click', (e) => {
 
 submitToDo.addEventListener('click', () => {
   toDoModal.style.display = 'none';
-  let newAddition = makeToDo(newToDoInfo());
+  let newAddition = newToDoInfo();
   addToDOM(newAddition.project, newAddition.title, newAddition.dueDate);
 });
 

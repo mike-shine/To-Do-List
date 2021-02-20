@@ -68,7 +68,7 @@
     } else if (high) {
       priority = 'high';
     }
-    return makeToDo(projectStatus, title, description, dueDate, priority);
+    return {projectStatus, title, description, dueDate, priority};
   }
 
 
