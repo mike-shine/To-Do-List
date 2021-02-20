@@ -8,6 +8,9 @@ const subHeader = document.createElement('h2');
 subHeader.textContent = 'Create a new project, or create a new to-do:';
 document.body.appendChild(subHeader);
 
+// create a html select tag menu here for users to select a project category to view
+// by default, on page load only unsorted to-dos are displayed
+
 const newProjectButton = document.createElement('button');
 newProjectButton.classList.add('newProjectButton');
 newProjectButton.textContent = 'New project';
@@ -22,13 +25,13 @@ const mowLawn = makeToDo('Around the House', 'mow the lawn', 'cut the blades of 
 
 const washDishes = makeToDo('Around the House', 'wash the dirty dishes', 'pretty self-explanatory', 'saturday', 'medium');
 
-const paintTheFence = makeToDo('Around the House', 'finish painting the backyard fence', 'I think that lovely shade of purple will be just right', 'tomorrow at the latest!', 'high');
+const getShedSupplies = makeToDo('Backyard Shed', 'get supplies', 'go to Lowe\'s for lumber and insulation', 'tomorrow at the latest!', 'high');
 
 const climbEverest = makeToDo('', 'climb Mt. Everest', 'descriptions for to-dos are kind of stupid', 'the end of 2022', 'medium');
 
 addToDOM(mowLawn.project, mowLawn.title, mowLawn.dueDate);
 addToDOM(washDishes.project, washDishes.title, washDishes.dueDate);
-addToDOM(paintTheFence.project, paintTheFence.title, paintTheFence.dueDate);
+addToDOM(getShedSupplies.project, getShedSupplies.title, getShedSupplies.dueDate);
 addToDOM(climbEverest.project, climbEverest.title, climbEverest.dueDate);
 
 
