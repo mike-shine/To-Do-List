@@ -1,12 +1,6 @@
 import {newProjectButton, newToDoButton} from './landingPage.js';
 import {makeToDo, addToDOM, newToDoInfo, newProjectInfo} from './functions.js';
 
-
-// window.addEventListener('DOMContentLoaded', (e) => {
-//   // e.preventDefault();
-//   // landingPage();
-// });
-
 const toDoModal = document.getElementById('toDoModal');
 const projectModal = document.getElementById('projectModal');
 const closeButton0 = document.getElementsByClassName('closeButton')[0];

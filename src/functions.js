@@ -75,6 +75,8 @@
     const title = document.querySelector('#newProjectTitle').value;
     const description = document.querySelector('#newProjectDescription').value;
     const dueDate = document.querySelector('#newProjectDueDate');
+    const projectList = document.querySelector('#projectSelector');
+    projectList.appendChild(title);
     return {title, description, dueDate};
   }
 

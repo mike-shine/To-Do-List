@@ -25,6 +25,7 @@ document.body.appendChild(lineBreak);
 const projectLabel = document.createElement('label');
 projectLabel.textContent = 'Select a project to view: ';
 const projectSelector = document.createElement('select');
+projectSelector.setAttribute('id', 'projectSelector');
 projectLabel.appendChild(projectSelector);
 const unsortedOption = document.createElement('option');
 unsortedOption.textContent = '';
@@ -38,6 +39,11 @@ backyardShedOption.textContent = 'Backyard-Shed';
 projectSelector.appendChild(backyardShedOption);
 
 document.body.appendChild(projectLabel);
+
+const unsortedToDoHeading = document.createElement('h3');
+unsortedToDoHeading.textContent = 'Unsorted to-dos';
+unsortedToDoHeading.style.textDecoration = 'underline';
+document.body.appendChild(unsortedToDoHeading);
 
 
 const mowLawn = makeToDo('Around the House', 'mow the lawn', 'cut the blades of grass shorter', 'next thursday', 'low');
