@@ -71,5 +71,12 @@
     return {projectStatus, title, description, dueDate, priority};
   }
 
+  function newProjectInfo() {
+    const title = document.querySelector('#newProjectTitle').value;
+    const description = document.querySelector('#newProjectDescription').value;
+    const dueDate = document.querySelector('#newProjectDueDate');
+    return {title, description, dueDate};
+  }
 
-export {makeToDo, addToDOM, newToDoInfo};
+
+export {makeToDo, addToDOM, newToDoInfo, newProjectInfo};

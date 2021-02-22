@@ -31,10 +31,10 @@ unsortedOption.textContent = '';
 projectSelector.appendChild(unsortedOption);
 
 const aroundTheHouseOption = document.createElement('option');
-aroundTheHouseOption.textContent = 'Around the House';
+aroundTheHouseOption.textContent = 'Around-the-House';
 projectSelector.appendChild(aroundTheHouseOption);
 const backyardShedOption = document.createElement('option');
-backyardShedOption.textContent = 'Backyard Shed';
+backyardShedOption.textContent = 'Backyard-Shed';
 projectSelector.appendChild(backyardShedOption);
 
 document.body.appendChild(projectLabel);

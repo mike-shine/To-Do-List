@@ -1,5 +1,5 @@
 import {newProjectButton, newToDoButton} from './landingPage.js';
-import {makeToDo, addToDOM, newToDoInfo} from './functions.js';
+import {makeToDo, addToDOM, newToDoInfo, newProjectInfo} from './functions.js';
 
 
 // window.addEventListener('DOMContentLoaded', (e) => {
@@ -41,7 +41,7 @@ submitToDo.addEventListener('click', () => {
   event.preventDefault();
   toDoModal.style.display = 'none';
   let newAddition = newToDoInfo();
-  addToDOM(newAddition.project, newAddition.title, newAddition.dueDate);
+  addToDOM(newAddition.projectStatus, newAddition.title, newAddition.dueDate);
 });
 
 
